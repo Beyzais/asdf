@@ -16,7 +16,7 @@ public class WelcomeController {
     @Value("${welcome.message}")
     private String message;
 
-    private List<String> tasks = Arrays.asList("A", "B", "C", "D", "E", "F", "G");//Arrays.asList("Z", "X", "E", "G", "A", "S", "W");
+    private List<String> tasks = Arrays.asList("Z", "X", "E", "G", "A", "S", "W");
 
     @GetMapping("/")
     public String main(Model model) {
@@ -36,5 +36,7 @@ public class WelcomeController {
 
         return "welcome"; //view
     }
+	
+	System.out.println("I m in controller");
 
 }
