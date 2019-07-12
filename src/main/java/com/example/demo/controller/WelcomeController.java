@@ -16,7 +16,7 @@ public class WelcomeController {
     @Value("${welcome.message}")
     private String message;
 
-    private List<String> tasks = Arrays.asList("A", "B", "C", "D", "E", "F", "G");
+    private List<String> tasks = Arrays.asList("Z", "X", "E", "G", "A", "S", "W");//Arrays.asList("A", "B", "C", "D", "E", "F", "G");
 
     @GetMapping("/")
     public String main(Model model) {
